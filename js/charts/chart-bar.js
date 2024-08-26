@@ -557,7 +557,6 @@ var PPDTA = new Chart(ppdtachart, {
 var FLP = new Chart(flpchart, {
   type: 'bar',
   data: {
-    labels: ["Influence of Local Actors", "Influence of International Actors", "Participation of Local Actors", "Participation of International Actors"],
     datasets: [{
 	  label: 'Direct Donor to LNNGO',
       backgroundColor: "#d7e039",
