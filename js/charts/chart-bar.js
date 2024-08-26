@@ -116,7 +116,7 @@ var IDAA = new Chart(idaachart, {
         textMargin: 4
       }
     },
-	
+	maintainAspectRatio: false,
 	   legend: {
 			display: true,
 			position: 'bottom'
@@ -228,7 +228,7 @@ var PDAA = new Chart(pdaachart, {
         textMargin: 4
       }
     },
-	
+	maintainAspectRatio: false,
 	   legend: {
 			display: true,
 			position: 'bottom'
@@ -328,7 +328,7 @@ var LNASHP = new Chart(lnashpchart, {
         textMargin: 4
       }
     },
-	
+	maintainAspectRatio: false,
 	   legend: {
 			display: false,
 			position: 'bottom'
@@ -441,7 +441,7 @@ var IPG = new Chart(ipgchart, {
         textMargin: 4
       }
     },
-	
+	maintainAspectRatio: false,
 	   legend: {
 			display: true,
 			position: 'bottom'
@@ -546,7 +546,7 @@ var PPDTA = new Chart(ppdtachart, {
         textMargin: 4
       }
     },
-	
+	maintainAspectRatio: false,
 	   legend: {
 			display: true,
 			position: 'bottom'
@@ -662,7 +662,7 @@ var FLP = new Chart(flpchart, {
         textMargin: 0
       }
     },
-	
+	maintainAspectRatio: false,
 	   legend: {
 			display: true,
 			position: 'bottom'
