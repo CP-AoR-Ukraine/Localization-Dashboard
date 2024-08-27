@@ -557,7 +557,7 @@ var PPDTA = new Chart(ppdtachart, {
 var FLP = new Chart(flpchart, {
   type: 'bar',
   data: {
-	  labels: "Percentage",
+	  labels: ["Percentage"],
     datasets: [{
 	  label: 'Direct Donor to LNNGO',
       backgroundColor: "#d7e039",
