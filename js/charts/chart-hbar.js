@@ -50,7 +50,7 @@ var LNSN = new Chart(lnsnchart, {
 },
 	
 	   legend: {
-			display: false,
+			display: true,
 			position: 'bottom'
       }
   },
