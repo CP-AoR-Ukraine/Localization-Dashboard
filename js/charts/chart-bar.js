@@ -126,7 +126,7 @@ var IDAA = new Chart(idaachart, {
 var PDAA = new Chart(pdaachart, {
   type: 'bar',
   data: {
-    labels: ["Influence of local actors", "Influence of international actors"],
+    labels: ["Local actors", "International actors"],
     datasets: [{
       label: "According to: All",
       backgroundColor: "#d7e039",
