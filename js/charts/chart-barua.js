@@ -126,7 +126,7 @@ var IDAA = new Chart(idaachart, {
 var PDAA = new Chart(pdaachart, {
   type: 'bar',
   data: {
-    labels: ["Місцеві суб'єкти", "Міжнародні суб'єкт"],
+    labels: ["Місцеві суб'єкти", "Міжнародні суб'єкти"],
     datasets: [{
       label: "Відповідно до: Всі",
       backgroundColor: "#d7e039",
