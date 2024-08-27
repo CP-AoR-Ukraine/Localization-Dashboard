@@ -41,7 +41,7 @@ var IDAA = new Chart(idaachart, {
         yAxes: [{
             display: false,
             ticks: {
-                suggestedMax: 5,    
+                suggestedMax: 8,    
                 beginAtZero: true  
             }
         }],
@@ -153,7 +153,7 @@ var PDAA = new Chart(pdaachart, {
         yAxes: [{
             display: false,
             ticks: {
-                suggestedMax: 5,    
+                suggestedMax: 8,    
                 beginAtZero: true  
             }
         }],
@@ -365,7 +365,7 @@ var IPG = new Chart(ipgchart, {
 			stacked: true,
             display: false,
             ticks: {
-                suggestedMax: 5,    
+                suggestedMax: 8,    
                 beginAtZero: false  
             }
         }],
@@ -471,7 +471,7 @@ var PPDTA = new Chart(ppdtachart, {
         yAxes: [{
             display: false,
             ticks: {
-                suggestedMax: 6,    
+                suggestedMax: 8,    
                 beginAtZero: true  
             }
         }],

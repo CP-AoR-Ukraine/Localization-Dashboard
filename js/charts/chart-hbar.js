@@ -14,7 +14,7 @@ var LNSN = new Chart(lnsnchart, {
   data: {
     labels: ["Sub-National", "National"],
     datasets: [{
-      label: "National",
+		 label: "National",
       backgroundColor: "#4e73df",
       hoverBackgroundColor: "#2e59d9",
       borderColor: "#4e73df",
@@ -33,6 +33,7 @@ var LNSN = new Chart(lnsnchart, {
     maintainAspectRatio: false,
 	  scales: {
         yAxes: [{
+			barPercentage: 0.6,
 			stacked: true,
             display: true,
         }],
@@ -60,7 +61,7 @@ var LNSN = new Chart(lnsnchart, {
 var TCSA = new Chart(tcsachart, {
   type: 'horizontalBar',
   data: {
-    
+    labels: ["Percentage"],
     datasets: [{
 	  label: ["General Programatic"],
       backgroundColor: "#d7e039",
@@ -87,8 +88,9 @@ var TCSA = new Chart(tcsachart, {
     maintainAspectRatio: false,
 	  scales: {
         yAxes: [{
+			barPercentage: 0.2,
 			stacked: true,
-            display: true,
+            display: false,
         }],
 		xAxes: [{
 			stacked: true,
@@ -114,7 +116,7 @@ var TCSA = new Chart(tcsachart, {
 var DAPCD = new Chart(dapcdchart, {
   type: 'horizontalBar',
   data: {
-    
+    labels: ["Percentage"],
     datasets: [{
 	  label: ["# of Intl Actors Delivering"],
       backgroundColor: "#d7e039",
@@ -134,8 +136,9 @@ var DAPCD = new Chart(dapcdchart, {
     maintainAspectRatio: false,
 	  scales: {
         yAxes: [{
+			barPercentage: 0.2,
 			stacked: true,
-            display: true,
+            display: false,
         }],
 		xAxes: [{
 			stacked: true,
@@ -161,7 +164,7 @@ var DAPCD = new Chart(dapcdchart, {
 var HSTP = new Chart(hstpchart, {
   type: 'horizontalBar',
   data: {
-    
+    labels: ["Percentage"],
     datasets: [{
 	  label: ["Yes"],
       backgroundColor: "#d7e039",
@@ -181,8 +184,9 @@ var HSTP = new Chart(hstpchart, {
     maintainAspectRatio: false,
 	  scales: {
         yAxes: [{
+			barPercentage: 0.2,
 			stacked: true,
-            display: true,
+            display: false,
         }],
 		xAxes: [{
 			stacked: true,
@@ -208,7 +212,7 @@ var HSTP = new Chart(hstpchart, {
 var AIU = new Chart(aiuchart, {
   type: 'horizontalBar',
   data: {
-    
+    labels: ["Percentage"],
     datasets: [{
 	  label: ["Yes"],
       backgroundColor: "#d7e039",
@@ -228,8 +232,9 @@ var AIU = new Chart(aiuchart, {
     maintainAspectRatio: false,
 	  scales: {
         yAxes: [{
+			barPercentage: 0.2,
 			stacked: true,
-            display: true,
+            display: false,
         }],
 		xAxes: [{
 			stacked: true,
