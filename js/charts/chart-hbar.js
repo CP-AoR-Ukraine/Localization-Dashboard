@@ -14,11 +14,13 @@ var LNSN = new Chart(lnsnchart, {
   data: {
     labels: ["Sub-National", "National"],
     datasets: [{
+      label: "National",
       backgroundColor: "#4e73df",
       hoverBackgroundColor: "#2e59d9",
       borderColor: "#4e73df",
       data: [4,0],
     },{
+      label: "International",
       backgroundColor: "#dfba4e",
       hoverBackgroundColor: "#be9622",
       borderColor: "#dfba4e",
