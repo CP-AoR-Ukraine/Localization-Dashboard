@@ -13,21 +13,21 @@ var flpchart = document.getElementById("FLP");
 var IDAA = new Chart(idaachart, {
   type: 'bar',
   data: {
-    labels: ["Influence of local actors", "Influence of international actors"],
+    labels: ["Вплив місцевих суб'єктів", "Вплив міжнародних суб'єктів"],
     datasets: [{
-      label: "According to: All",
+      label: "Відповідно до: Всі",
       backgroundColor: "#d7e039",
       hoverBackgroundColor: "#c3cb4a",
       borderColor: "#d7e039",
       data: [3.6,4],
     },{
-		label: "According to: Local or National Organisation",
+		label: "Відповідно до: Місцева або національна організація",
       backgroundColor: "#95c651 ",
       hoverBackgroundColor: "#87a663",
       borderColor: "#95c651",
       data: [3.7,4],
 	},{
-		label: "According to: International NGO",
+		label: "Відповідно до: Міжнародна громадська організація",
       backgroundColor: "#86789c ",
       hoverBackgroundColor: "#7d758d",
       borderColor: "#86789c",
@@ -126,21 +126,21 @@ var IDAA = new Chart(idaachart, {
 var PDAA = new Chart(pdaachart, {
   type: 'bar',
   data: {
-    labels: ["Local actors", "International actors"],
+    labels: ["Місцеві суб'єкти", "Міжнародні суб'єкт"],
     datasets: [{
-      label: "According to: All",
+      label: "Відповідно до: Всі",
       backgroundColor: "#d7e039",
       hoverBackgroundColor: "#c3cb4a",
       borderColor: "#d7e039",
       data: [3.4,4],
     },{
-		label: "According to: Local or National Organisation",
+		label: "Відповідно до: Місцева або національна організація",
       backgroundColor: "#95c651 ",
       hoverBackgroundColor: "#87a663",
       borderColor: "#95c651",
       data: [3.6,4],
 	},{
-		label: "According to: International NGO",
+		label: "Відповідно до: Міжнародна громадська організація",
       backgroundColor: "#86789c ",
       hoverBackgroundColor: "#7d758d",
       borderColor: "#86789c",
@@ -239,7 +239,7 @@ var PDAA = new Chart(pdaachart, {
 var LNASHP = new Chart(lnashpchart, {
   type: 'bar',
   data: {
-    labels: ["According to: All", "According to: Local or National Organisation", "According to: International NGO"],
+    labels: ["Відповідно до: Всі", "Відповідно до: Місцева або національна організація", "Відповідно до: Міжнародна громадська організація"],
     datasets: [{
       backgroundColor: "#d7e039",
       hoverBackgroundColor: "#c3cb4a",
@@ -340,9 +340,9 @@ var LNASHP = new Chart(lnashpchart, {
 var IPG = new Chart(ipgchart, {
   type: 'bar',
   data: {
-    labels: ["Influence of Local Actors", "Influence of International Actors", "Participation of Local Actors", "Participation of International Actors"],
+    labels: ["Вплив місцевих суб'єктів", "Вплив міжнародних суб'єктів", "Участь місцевих суб'єктів", "Участь міжнародних суб'єктів"],
     datasets: [{
-	  label: 'Influence and Participation',
+	  label: 'Вплив та участь',
       backgroundColor: "#d7e039",
       hoverBackgroundColor: "#c3cb4a",
       borderColor: "#d7e039",
@@ -350,7 +350,7 @@ var IPG = new Chart(ipgchart, {
       data: [3.6, 4, 3.4, 4],
     },
 	{
-	  label: 'gap',
+	  label: 'Розрив',
 	  backgroundColor: "rgba(192,189,26, 0.01)",
       hoverBackgroundColor: "rgba(192,189,26, 0.01)",
       borderColor: "red",
@@ -451,15 +451,15 @@ var IPG = new Chart(ipgchart, {
 var PPDTA = new Chart(ppdtachart, {
   type: 'bar',
   data: {
-    labels: ["Access to donors", "Discussing Problems", "Respecting Opinions", "Accounting for risks", "Capacity Development", "Project Input", "Would Recommend"],
+    labels: ["Доступ до донорів", "Обговорення проблем", "Повага до думок", "Врахування ризиків", "Розвиток спроможності", "Вхідні дані проекту", "Ми б рекомендували"],
     datasets: [{
-      label: "International",
+      label: "Міжнародні",
       backgroundColor: "#d7e039",
       hoverBackgroundColor: "#c3cb4a",
       borderColor: "#d7e039",
       data: [0,4.6,4.7,4.4,4.5,4.4,4.6],
     },{
-		label: "National",
+		label: "Національні",
       backgroundColor: "#95c651 ",
       hoverBackgroundColor: "#87a663",
       borderColor: "#95c651",
@@ -557,9 +557,9 @@ var PPDTA = new Chart(ppdtachart, {
 var FLP = new Chart(flpchart, {
   type: 'bar',
   data: {
-	  labels: "Percentage",
+	 labels: ["Відсоток"],
     datasets: [{
-	  label: 'Direct Donor to LNNGO',
+	  label: 'Прямий донор до ЛНУО',
       backgroundColor: "#d7e039",
       hoverBackgroundColor: "#c3cb4a",
       borderColor: "#d7e039",
@@ -567,13 +567,13 @@ var FLP = new Chart(flpchart, {
       data: [9],
     },
 	{
-	  label: 'Through intermediary',
+	  label: 'Через посередника',
 	  backgroundColor: "95c651",
       hoverBackgroundColor: "#87a663",
       data: [71],
 	},
 	{
-	  label: 'No LNNGO',
+	  label: 'Нема жодної ЛНУО',
 	  backgroundColor: "#86789c",
       hoverBackgroundColor: "#7d758d",
       data: [19],
