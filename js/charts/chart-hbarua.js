@@ -109,7 +109,8 @@ var TCSA = new Chart(tcsachart, {
 	
 	   legend: {
 			display: true,
-			position: 'bottom'
+	  position: 'bottom',
+	  align: 'start'
       }
   },
 });
@@ -205,7 +206,8 @@ var HSTP = new Chart(hstpchart, {
 	
 	   legend: {
 			display: true,
-			position: 'bottom'
+	  position: 'bottom',
+	  align: 'start'
       }
   },
 });

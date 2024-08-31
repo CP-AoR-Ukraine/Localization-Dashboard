@@ -119,7 +119,8 @@ var IDAA = new Chart(idaachart, {
 	maintainAspectRatio: false,
 	   legend: {
 			display: true,
-			position: 'bottom'
+	  position: 'bottom',
+	  align: 'start'
       }
   },
 });
@@ -231,7 +232,8 @@ var PDAA = new Chart(pdaachart, {
 	maintainAspectRatio: false,
 	   legend: {
 			display: true,
-			position: 'bottom'
+	  position: 'bottom',
+	  align: 'start'
       }
   },
 });
@@ -665,7 +667,8 @@ var FLP = new Chart(flpchart, {
 	maintainAspectRatio: false,
 	   legend: {
 			display: true,
-			position: 'bottom'
+	  position: 'bottom',
+	  align: 'start'
       }
   },
 });

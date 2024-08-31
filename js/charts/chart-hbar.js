@@ -109,7 +109,8 @@ var TCSA = new Chart(tcsachart, {
 	
 	   legend: {
 			display: true,
-			position: 'bottom'
+	  position: 'bottom',
+	  align: 'start'
       }
   },
 });
@@ -157,7 +158,8 @@ var DAPCD = new Chart(dapcdchart, {
 	
 	   legend: {
 			display: true,
-			position: 'bottom'
+	  position: 'bottom',
+	  align: 'start'
       }
   },
 });
