@@ -579,9 +579,9 @@ var PSC = new Chart(pscchart, {
       data: [0,2,2,2,0,1,1,0,2],
 	},{
 		label: "Red Cross",
-      backgroundColor: "#86789c ",
-      hoverBackgroundColor: "#7d758d",
-      borderColor: "#86789c",
+      backgroundColor: "#9fd5b5 ",
+      hoverBackgroundColor: "#90af9f",
+      borderColor: "#9fd5b5",
       data: [1,1,1,1,1,1,1,1,1],
 	}
 	],
