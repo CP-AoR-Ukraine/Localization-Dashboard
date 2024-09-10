@@ -9,7 +9,7 @@ var pdaachart = document.getElementById("PDAA");
 var lnashpchart = document.getElementById("LNASHP");
 var ipgchart = document.getElementById("IPG");
 var ppdtachart = document.getElementById("PPDTA");
-var flpchart = document.getElementById("FLP");
+var pscchart = document.getElementById("PSC");
 var IDAA = new Chart(idaachart, {
   type: 'bar',
   data: {
@@ -555,59 +555,62 @@ var PPDTA = new Chart(ppdtachart, {
       }
   },
 });
-
-var FLP = new Chart(flpchart, {
+var PSC = new Chart(pscchart, {
   type: 'bar',
   data: {
-	  labels: ["Percentage"],
+    labels: ["Chernihivska", "Dnipropetrovska", "Donetska", "Kharkivska", "Khersonska", "Mykolaivska", "Odeska", "Sumska", "Zaporizka"],
     datasets: [{
-	  label: 'Direct Donor to LNNGO',
+      label: "International NGO",
       backgroundColor: "#d7e039",
       hoverBackgroundColor: "#c3cb4a",
       borderColor: "#d7e039",
-	  //borderWidth:2,
-      data: [9],
-    },
-	{
-	  label: 'Through intermediary',
-	  backgroundColor: "95c651",
+      data: [8,13,5,11,4,11,7,7,9],
+    },{
+		label: "National NGO",
+      backgroundColor: "#95c651 ",
       hoverBackgroundColor: "#87a663",
-      data: [71],
-	},
-	{
-	  label: 'No LNNGO',
-	  backgroundColor: "#86789c",
+      borderColor: "#95c651",
+      data: [27,47,22,46,23,21,25,32,38],
+	},{
+		label: "UN Agency",
+      backgroundColor: "#86789c ",
       hoverBackgroundColor: "#7d758d",
-      data: [19],
+      borderColor: "#86789c",
+      data: [0,2,2,2,0,1,1,0,2],
+	},{
+		label: "Red Cross",
+      backgroundColor: "#86789c ",
+      hoverBackgroundColor: "#7d758d",
+      borderColor: "#86789c",
+      data: [1,1,1,1,1,1,1,1,1],
 	}
 	],
   },
   options: {
+
 	  scales: {
         yAxes: [{
-			stacked: true,
             display: false,
             ticks: {
-                suggestedMax: 120,    
-                beginAtZero: false  
+                suggestedMax: 50,    
+                beginAtZero: true  
             }
         }],
-		xAxes: [{
-			stacked: true,
-			display: true,
-		}]
+		xAxes: {
+		display: false,
+		}
     },
 	
     plugins: {
        labels: {
         // render 'label', 'value', 'percentage', 'image' or custom function, default is 'percentage'
-        render: 'percentage',
+        render: 'value',
 
         // precision for percentage, default is 0
         precision: 0,
 
         // identifies whether or not labels of value 0 are displayed, default is false
-        showZero: false,
+        showZero: true,
 
         // font size, default is defaultFontSize
         fontSize: 12,
@@ -661,7 +664,7 @@ var FLP = new Chart(flpchart, {
 
         // add margin of text when position is `outside` or `border`
         // default is 2
-        textMargin: 0
+        textMargin: 4
       }
     },
 	maintainAspectRatio: false,

@@ -9,21 +9,22 @@ var dapcdchart = document.getElementById("DAPCD");
 var hstpchart = document.getElementById("HSTP");
 var aiuchart = document.getElementById("AIU");
 var tclnahart = document.getElementById("TCLNA");
+
 var LNSN = new Chart(lnsnchart, {
   type: 'horizontalBar',
   data: {
-    labels: ["Sub-National", "National"],
+    labels: [" Regional / Sub-National", "National"],
     datasets: [{
 		 label: "National",
-      backgroundColor: "#4e73df",
-      hoverBackgroundColor: "#2e59d9",
-      borderColor: "#4e73df",
+      backgroundColor: "#95c651",
+      hoverBackgroundColor: "#87a663",
+      borderColor: "#95c651",
       data: [4,0],
     },{
       label: "International",
-      backgroundColor: "#dfba4e",
-      hoverBackgroundColor: "#be9622",
-      borderColor: "#dfba4e",
+      backgroundColor: "#d7e039",
+      hoverBackgroundColor: "#c3cb4a",
+      borderColor: "#d7e039",
       data: [4,1],
 	}
 	],
@@ -43,19 +44,37 @@ var LNSN = new Chart(lnsnchart, {
 		}]
     },
 	
-    plugins: {
-     datalabels: {
-        formatter: (value, ctx) => {
-          return;
-        },
-        color: '#fff',
-      }
-},
-	
+    plugins: [],	
 	   legend: {
 			display: true,
 			position: 'bottom'
-      }
+      },
+"hover": {
+                      "animationDuration": 0
+                    },
+                    "animation": {
+                      "duration": 1,
+                      "onComplete": function() {
+                        var chartInstance = this.chart
+                        ctx = chartInstance.ctx;
+                        ctx.font = Chart.helpers.fontString(14, Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
+                        ctx.fillStyle = "#000";
+                        ctx.textAlign = 'end';
+                        ctx.textBaseline = 'top';
+
+                        this.data.datasets.forEach(function(dataset, i) {
+                          var meta = chartInstance.controller.getDatasetMeta(i);
+                          meta.data.forEach(function(bar, index) {
+                                var data = dataset.data[index];
+								if (data == 4) {
+                                ctx.fillText((data*12.5)+"%", bar._model.x -25, bar._model.y - 5);
+								}
+								
+								
+                          });
+                        });
+                      }
+                    },
   },
 });
 var TCSA = new Chart(tcsachart, {
@@ -111,7 +130,32 @@ var TCSA = new Chart(tcsachart, {
 			display: true,
 	  position: 'bottom',
 	  align: 'start'
-      }
+      },
+	  "hover": {
+                      "animationDuration": 0
+                    },
+                    "animation": {
+                      "duration": 1,
+                      "onComplete": function() {
+                        var chartInstance = this.chart
+                        ctx = chartInstance.ctx;
+                        ctx.font = Chart.helpers.fontString(14, Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
+                        ctx.fillStyle = "#000";
+                        ctx.textAlign = 'end';
+                        ctx.textBaseline = 'top';
+
+                        this.data.datasets.forEach(function(dataset, i) {
+                          var meta = chartInstance.controller.getDatasetMeta(i);
+                          meta.data.forEach(function(bar, index) {
+                                var data = dataset.data[index];
+								if (data > 0) {
+                                ctx.fillText((data) + "%", bar._model.x -40, bar._model.y - 5);
+								}
+								
+                          });
+                        });
+                      }
+                    },
   },
 });
 var DAPCD = new Chart(dapcdchart, {
@@ -160,7 +204,32 @@ var DAPCD = new Chart(dapcdchart, {
 			display: true,
 	  position: 'bottom',
 	  align: 'start'
-      }
+      },
+	  "hover": {
+                      "animationDuration": 0
+                    },
+                    "animation": {
+                      "duration": 1,
+                      "onComplete": function() {
+                        var chartInstance = this.chart
+                        ctx = chartInstance.ctx;
+                        ctx.font = Chart.helpers.fontString(14, Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
+                        ctx.fillStyle = "#000";
+                        ctx.textAlign = 'end';
+                        ctx.textBaseline = 'top';
+
+                        this.data.datasets.forEach(function(dataset, i) {
+                          var meta = chartInstance.controller.getDatasetMeta(i);
+                          meta.data.forEach(function(bar, index) {
+                                var data = dataset.data[index];
+								if (data > 0) {
+                                ctx.fillText((data) + "%", bar._model.x -5, bar._model.y - 5);
+								}
+								
+                          });
+                        });
+                      }
+                    },
   },
 });
 var HSTP = new Chart(hstpchart, {
@@ -208,7 +277,32 @@ var HSTP = new Chart(hstpchart, {
 	   legend: {
 			display: true,
 			position: 'bottom'
-      }
+      },
+	  "hover": {
+                      "animationDuration": 0
+                    },
+                    "animation": {
+                      "duration": 1,
+                      "onComplete": function() {
+                        var chartInstance = this.chart
+                        ctx = chartInstance.ctx;
+                        ctx.font = Chart.helpers.fontString(14, Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
+                        ctx.fillStyle = "#000";
+                        ctx.textAlign = 'end';
+                        ctx.textBaseline = 'top';
+
+                        this.data.datasets.forEach(function(dataset, i) {
+                          var meta = chartInstance.controller.getDatasetMeta(i);
+                          meta.data.forEach(function(bar, index) {
+                                var data = dataset.data[index];
+								if (data > 0) {
+                                ctx.fillText((data) + "%", bar._model.x -100, bar._model.y - 5);
+								}
+								
+                          });
+                        });
+                      }
+                    },
   },
 });
 var AIU = new Chart(aiuchart, {
@@ -256,19 +350,44 @@ var AIU = new Chart(aiuchart, {
 	   legend: {
 			display: true,
 			position: 'bottom'
-      }
+      },
+	  "hover": {
+                      "animationDuration": 0
+                    },
+                    "animation": {
+                      "duration": 1,
+                      "onComplete": function() {
+                        var chartInstance = this.chart
+                        ctx = chartInstance.ctx;
+                        ctx.font = Chart.helpers.fontString(14, Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
+                        ctx.fillStyle = "#000";
+                        ctx.textAlign = 'end';
+                        ctx.textBaseline = 'top';
+
+                        this.data.datasets.forEach(function(dataset, i) {
+                          var meta = chartInstance.controller.getDatasetMeta(i);
+                          meta.data.forEach(function(bar, index) {
+                                var data = dataset.data[index];
+								if (data > 0) {
+                                ctx.fillText((data) + "%", bar._model.x -20, bar._model.y - 5);
+								}
+								
+                          });
+                        });
+                      }
+                    },
   },
 });
 var TCLNA = new Chart(tclnahart, {
   type: 'horizontalBar',
   data: {
-    labels: ["Other", "Partnerships", "Coordination", "Security", "Organisational capacity", "Technical capacity", "Access to the field", "Funding"],
+    labels: ["Security", "Funding", "Access to the field", "Technical capacity", "Organisational capacity", "Partnerships", "Coordination", "Other"],
     datasets: [{
 		label: "Constraints",
       backgroundColor: "#d7e039",
       hoverBackgroundColor: "#c3cb4a",
       borderColor: "#4e73df",
-      data: [0,5,4,27,6,10,14,24],
+      data: [27, 24, 14, 10, 6, 5,4,0],
     }],
   },
   options: {
@@ -297,6 +416,31 @@ var TCLNA = new Chart(tclnahart, {
 	   legend: {
 			display: false,
 			position: 'bottom'
-      }
+      },
+	  "hover": {
+                      "animationDuration": 0
+                    },
+                    "animation": {
+                      "duration": 1,
+                      "onComplete": function() {
+                        var chartInstance = this.chart
+                        ctx = chartInstance.ctx;
+                        ctx.font = Chart.helpers.fontString(14, Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
+                        ctx.fillStyle = "#000";
+                        ctx.textAlign = 'end';
+                        ctx.textBaseline = 'top';
+
+                        this.data.datasets.forEach(function(dataset, i) {
+                          var meta = chartInstance.controller.getDatasetMeta(i);
+                          meta.data.forEach(function(bar, index) {
+                                var data = dataset.data[index];
+								if (data > 0) {
+                                ctx.fillText((data), bar._model.x -20, bar._model.y - 5);
+								}
+								
+                          });
+                        });
+                      }
+                    },
   },
 });
