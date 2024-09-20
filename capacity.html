@@ -31,7 +31,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Governance and Decision Making</div>
+                <div class="sidebar-brand-text mx-3">Capacity</div>
             </a>
 
             <!-- Divider -->
@@ -40,6 +40,11 @@
             <!-- Nav Item - Dashboard -->
             
             <!-- Nav Item - Charts -->
+			<li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Governance and Decision Making</span></a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link" href="influence.html">
                     <i class="fas fa-fw fa-chart-area"></i>
@@ -50,11 +55,7 @@
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Partnerships and Funding</span></a>
             </li>
-			<li class="nav-item">
-                <a class="nav-link" href="capacity.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Capacity</span></a>
-            </li>
+			
 
            
 
@@ -85,96 +86,96 @@
 
                     <!-- Content Row -->
                     
-
 						<div class="card ">
-						
-                                <!-- Card Header - Dropdown -->
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Governance and Decision Making</h6>
+						<div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Capacity</h6>
                                 </div>
 								<div class="card-body">
 								<div class="row">
-                        <!-- Donut Chart -->
-						<div class="d-flex-row-reverse col-xl-3">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Child Protection AoR - Membership</h6>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="chart-pie pt-4">
-                                        <canvas id="WCSAM" ></canvas>
-                                    </div>
-                                    <hr>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="d-flex-row col-xl-3">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">SAG - Membership</h6>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="chart-pie pt-4">
-                                        <canvas id="SAG"></canvas>
-                                    </div>
-                                    <hr>
-                                    
-                                </div>
-                            </div>
-                        </div>
 						
-						 <div class="col-xl-6">
-                            <!-- HBar Chart -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Leadership in coordination</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="chart-bar">
-                                        <canvas width="600" height="200" id="LNSN"></canvas>
-                                    </div>
-                                    <hr>
-                                    
-                                </div>
-                            </div>
+							<div class="col-sm-2 d-flex align-items-stretch">
+								<!-- HBar Chart -->
+								<div class="card shadow mb-4">
+									<div class="card-header py-3">
+										<h6 class="m-0 font-weight-bold text-primary">Type of capacity strengthening activites</h6>
+									</div>
+									<div class="card-body">
+										<div class="chart-bar">
+											<canvas width="600" height="200" id="TCSA"></canvas>
+										</div>
+										<hr>
+										
+									</div>
+								</div>
 
-                        </div>
-						
-						 <div class="col-xl-12 ">
+							</div>
+							<div class="col-sm-2 d-flex align-items-stretch">
                             <!-- HBar Chart -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Participation in Sub-national coordination</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="chart-bar">
-                                        <canvas width="600" height="200" id="PSC"></canvas>
-                                    </div>
-                                    <hr>
-                                    
-                                </div>
-                            </div>
-
-                        </div>
+								<div class="card shadow mb-4">
+									<div class="card-header py-3">
+										<h6 class="m-0 font-weight-bold text-primary">Diversity of actors providing capacity dev</h6>
+									</div>
+									<div class="card-body">
+										<div class="chart-bar">
+											<canvas width="600" height="200" id="DAPCD"></canvas>
+										</div>
+										<hr>
+										
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-sm-2 d-flex align-items-stretch">
+								<!-- HBar Chart -->
+								<div class="card shadow mb-4">
+									<div class="card-header py-3">
+										<h6 class="m-0 font-weight-bold text-primary">Humanitarian standards, tools and policies are available in relevant local languages</h6>
+									</div>
+									<div class="card-body">
+										<div class="chart-bar">
+											<canvas width="600" height="200" id="HSTP"></canvas>
+										</div>
+										<hr>
+										
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-2 d-flex align-items-stretch">
+								<!-- HBar Chart -->
+								<div class="card shadow mb-4">
+									<div class="card-header py-3">
+										<h6 class="m-0 font-weight-bold text-primary">Are INGOs / UN agencies actively approaching local actors staff?</h6>
+									</div>
+									<div class="card-body">
+										<div class="chart-bar">
+											<canvas width="600" height="200" id="AIU"></canvas>
+										</div>
+										<hr>
+										
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 d-flex align-items-stretch">
+								<!-- HBar Chart -->
+								<div class="card shadow mb-4">
+									<div class="card-header py-3">
+										<h6 class="m-0 font-weight-bold text-primary">Top 3 constraints of Local and National Actors</h6>
+									</div>
+									<div class="card-body">
+										<div class="chart-bar">
+											<canvas width="600" height="200" id="TCLNA"></canvas>
+										</div>
+										<hr>
+										
+									</div>
+								</div>
+							</div>
+							</div>
+							</div>
 						
-						
-						
-						
-						</div>
-						</div>
-						
-						
-						
-						
-						
-						
-						</div>
-                    <div class="col-xl-12 ">
+                    
+                    
+<div class="col-xl-12 ">
 				 <div class="card p-3 mb-2 bg-light text-dark">
 					  <div class="card-body">
 						<h5 class="card-title">Info</h5>
@@ -184,7 +185,7 @@
 					  </div>
 					</div>
                 </div>
-				</div>
+                </div>
                 <!-- /.container-fluid -->
 
             </div>
@@ -219,7 +220,7 @@
 	<script src="js/chart.js/chartjs-plugin-labels.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="js/charts/governance.js"></script>
+    <script src="js/charts/capacity.js"></script>
 
 </body>
 
