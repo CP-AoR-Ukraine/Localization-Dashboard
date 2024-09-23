@@ -17,7 +17,7 @@ var TCSA = new Chart(tcsachart, {
     labels: ["General Programatic", "Organisational or Operational", "Technical Child Protection"],
     datasets: [{
       data: [47,0,53],
-      backgroundColor: ['#5a5a50','#fff'],
+      backgroundColor: CPbackgroundColor,
       hoverBackgroundColor: CPhoverBackgroundColor,
       hoverBorderColor: "rgba(234, 236, 244, 1)",
     }],
