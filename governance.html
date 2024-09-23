@@ -31,7 +31,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Partnerships and Funding</div>
+                <div class="sidebar-brand-text mx-3">Governance and Decision Making</div>
             </a>
 
             <!-- Divider -->
@@ -40,17 +40,16 @@
             <!-- Nav Item - Dashboard -->
             
             <!-- Nav Item - Charts -->
-			<li class="nav-item">
-                <a class="nav-link" href="governance.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span><h5>Governance and Decision Making</h5></span></a>
-            </li>
             <li class="nav-item">
                 <a class="nav-link" href="influence.html">
                     <i class="fas fa-fw fa-chart-area"></i>
-                    <span><h5>Influence and Participation</h5></span></a>
+                    <span><h5>Influence and Participation </h5></span></a>
             </li>
-			
+			<li class="nav-item">
+                <a class="nav-link" href="partnerships.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span><h5>Partnerships and Funding</h5></span></a>
+            </li>
 			<li class="nav-item">
                 <a class="nav-link" href="capacity.html">
                     <i class="fas fa-fw fa-chart-area"></i>
@@ -85,150 +84,98 @@
                     <p class="mb-4"></p>
 
                     <!-- Content Row -->
-						<div class="row ">
-						<div class="col-xl-6 col-lg-7 align-items-stretch">
+                    
+
 						<div class="card ">
 						
                                 <!-- Card Header - Dropdown -->
                                 <div class="card-header py-3">
-                                    <h4 class="m-0 font-weight-bold text-primary">Partnerships</h4>
+                                    <h4 class="m-0 font-weight-bold text-primary">Governance and Decision Making</h4>
                                 </div>
 								<div class="card-body">
 								<div class="row">
-								
-						<div class="col-xl-6 col-lg-7 ">
-                            <!-- Bar Chart -->
+                        <!-- Donut Chart -->
+						<div class="d-flex-row-reverse col-xl-3">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div class="card-header py-3">
+                                    <h5 class="m-0 font-weight-bold text-primary">Child Protection AoR - Membership</h5>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-pie pt-4">
+                                        <canvas id="WCSAM" ></canvas>
+                                    </div>
+                                    <hr>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex-row col-xl-3">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div class="card-header py-3">
+                                    <h5 class="m-0 font-weight-bold text-primary">SAG - Membership</h5>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-pie pt-4">
+                                        <canvas id="SAG"></canvas>
+                                    </div>
+                                    <hr>
+                                    
+                                </div>
+                            </div>
+                        </div>
+						
+						 <div class="col-xl-6">
+                            <!-- HBar Chart -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h5 class="m-0 font-weight-bold text-primary">Perception of partnership disaggregated by type of actor (max:5)</h5>
+                                    <h5 class="m-0 font-weight-bold text-primary">Leadership in coordination</h5>
                                 </div>
                                 <div class="card-body">
                                     <div class="chart-bar">
-                                        <canvas width="600" height="200" id="PPDTA"></canvas>
+                                        <canvas width="600" height="200" id="LNSN"></canvas>
                                     </div>
                                     <hr>
-									<p class="card-text">Access to donors = L/NNGO attends meetings with the donor, alongside UN/INGO partners (3 = Sometimes, 4 = Frequently, 5 = Always)</p>
-									<p class="card-text"> Discussing Problems = how comfortable L/NNGOs are to approach UN/INGO partners to discuss problems (3 = Somewhat comfortable, 4 = Quite comfortable, 5 = Very comfortable)</p>
-									<p class="card-text">Respecting Opinions = UN/INGOs respect L/NNGOs partners’ point of view (3 = Some respect, 4 = Respectful, 5 = Very respectful)</p>
-									<p class="card-text">Accounting for L/NNGOs‘ risk = Risks to L/NNGO staffs’ have been adequately taken into account in the partnership (3 = Moderately, 4 = Considerably, 5 = Completely)</p>
-									<p class="card-text">Capacity Development of L/NNGO staffs= by UN/INGO partners (3 = Ad hoc capacity development for organisation, 4 = Occasional capacity development for organisation, 5 = Work very well on capacity development together)</p>
-									<p class="card-text">Inputs into Project design = consideration of L/NNGOs partners’ inputs into project design (3 = Some collaboration, but donor leads, 4 = Work together but donor/UN/INGO decides, 5 = Work together collaboratively as equals)</p>
-									<p class="card-text">Would recommend = If L/NNGOs and UN/INGO partners would recommend others about each other (3 = Unsure, 4 = Likely to recommend, 5 = Very likely to recommend)</p>
+                                    
                                 </div>
                             </div>
 
                         </div>
-						<div class="col-xl-6 col-lg-7 ">
-						<div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div class="card-header py-3">
-                                    <h5 class="m-0 font-weight-bold text-primary">Quality of Partnerships</h5>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="chart-pie pt-4">
-                                        <canvas id="QOP"></canvas>
-                                    </div>
-                                    <hr>
-                                    
-									
-                                </div>
-                            </div>
-							</div>
-						</div>
-						</div>
-						</div>
-						</div>
-						<div class="col-xl-6 col-lg-7 d-flex align-items-stretch">
-						<div class="card ">
 						
-                                <!-- Card Header - Dropdown -->
-                                <div class="card-header py-3">
-                                    <h4 class="m-0 font-weight-bold text-primary">Funding</h4>
-                                </div>
-								<div class="card-body">
-								<div class="row">
-								<div class="col-xl-5 col-lg-7 d-flex align-items-stretch">
+						 <div class="col-xl-12 ">
+                            <!-- HBar Chart -->
                             <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
                                 <div class="card-header py-3">
-                                    <h5 class="m-0 font-weight-bold text-primary">Funding to local partners</h5>
+                                    <h5 class="m-0 font-weight-bold text-primary">Participation in Sub-national coordination</h5>
                                 </div>
-                                <!-- Card Body -->
                                 <div class="card-body">
-                                    <div class="chart-pie pt-4">
-                                        <canvas id="FLP"></canvas>
+                                    <div class="chart-bar">
+                                        <canvas width="600" height="200" id="PSC"></canvas>
                                     </div>
                                     <hr>
                                     
-									
                                 </div>
                             </div>
+
                         </div>
 						
-								<div class="col-xl-7 col-lg-7 d-flex align-items-stretch">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div class="card-header py-3">
-                                    <h5 class="m-0 font-weight-bold text-primary">APM projects</h5>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="chart-pie pt-4">
-                                        <canvas id="AHRPS"></canvas>
-                                    </div>
-                                    <hr>
-                                    
-                                </div>
-                            </div>
-                        </div>
-						<div "col-xl-6 col-lg-7">
-						<div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                
-                                <!-- Card Body -->
-                                <div class="card-body">
-								<blockquote class="blockquote">
-								  <p>Around</p>
-								  <h3>9 in every 10</h3>
-								  <p class="mb-0">Children were reached by Local and National Actors</p>
-								  <footer class="blockquote-footer">based on <cite title="Source Title">5Ws reporting</cite></footer>
-								  </blockquote>
-                                        <img src = "css/childrens.svg" alt="Childrens"
-                                    <hr>
-									<p>Total Children reached by Local/National actors in Jan - Aug 2024</p>
-									<h1 class="m-0 font-weight-bold text-info">964,127</h1>
-                                    
-                                </div>
-                            </div>
 						
-						</div>
 						
-						</div>
-						</div>
+						
 						</div>
 						</div>
 						
 						
-						</div>
 						
 						
-                                <!-- Card Header - Dropdown -->
-                                
-						</div>
+						
+						
 						</div>
                     
-<div class="col-xl-12 ">
-				 <div class="card p-3 mb-2 bg-light text-dark">
-					  <div class="card-body">
-						<h5 class="card-title">Info</h5>
-						<p class="card-text">Total: 60 responses</p>
-						<p class="card-text">NNGO: 35 responses</p>
-						<p class="card-text">INGO: 25 responses</p>
-					  </div>
-					</div>
-                </div>
-                </div>
+				</div>
                 <!-- /.container-fluid -->
 
             </div>
@@ -263,7 +210,8 @@
 	<script src="js/chart.js/chartjs-plugin-labels.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="js/charts/partnerships.js"></script>
+    <script src="js/charts/governance.js"></script>
+
 </body>
 
 </html>
