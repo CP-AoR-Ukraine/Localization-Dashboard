@@ -114,9 +114,9 @@ var SAG = new Chart(sagchart, {
 var WCSAM = new Chart(wcsamchart, {
   type: 'pie',
   data: {
-    labels: [ "# from INGOs", "# from Goverment", "# from National Organisations", "# from UN agencies", "# from Local Organisations"],
+    labels: [ "# from INGOs", "# from Goverment", "# from  Local and National Organisations", "# from UN agencies"],
     datasets: [{
-      data: [39, 7, 149,3, 11 ],
+      data: [39, 7, 160,3 ],
       backgroundColor: CPbackgroundColor,
       hoverBackgroundColor: CPhoverBackgroundColor,
       hoverBorderColor: "rgba(234, 236, 244, 1)",
@@ -281,7 +281,8 @@ var LNSN = new Chart(lnsnchart, {
                       }
                     },
   },
-});var PSC = new Chart(pscchart, {
+});
+var PSC = new Chart(pscchart, {
   type: 'bar',
   data: {
     labels: ["Chernihivska", "Dnipropetrovska", "Donetska", "Kharkivska", "Khersonska", "Mykolaivska", "Odeska", "Sumska", "Zaporizka"],
@@ -305,8 +306,8 @@ var LNSN = new Chart(lnsnchart, {
       data: [0,2,2,2,0,1,1,0,2],
 	},{
 		label: "Red Cross",
-      backgroundColor: "#86789c ",
-      hoverBackgroundColor: "#7d758d",
+      backgroundColor: "#9fd5b5 ",
+      hoverBackgroundColor: "#90af9f",
       borderColor: "#86789c",
       data: [1,1,1,1,1,1,1,1,1],
 	}
