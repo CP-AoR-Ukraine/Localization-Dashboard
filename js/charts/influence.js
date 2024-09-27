@@ -52,7 +52,7 @@ var IDAA = new Chart(idaachart, {
     plugins: {
        labels: {
         // render 'label', 'value', 'percentage', 'image' or custom function, default is 'percentage'
-        render: 'value',
+        render: function (args) {return 20* args.value + '%'},
 
         // precision for percentage, default is 0
         precision: 0,
@@ -123,6 +123,8 @@ var IDAA = new Chart(idaachart, {
       }
   },
 });
+
+
 var PDAA = new Chart(pdaachart, {
   type: 'bar',
   data: {
@@ -165,7 +167,7 @@ var PDAA = new Chart(pdaachart, {
     plugins: {
        labels: {
         // render 'label', 'value', 'percentage', 'image' or custom function, default is 'percentage'
-        render: 'value',
+        render: function (args) {return 20* args.value + '%'},
 
         // precision for percentage, default is 0
         precision: 0,
@@ -266,7 +268,7 @@ var LNASHP = new Chart(lnashpchart, {
     plugins: {
        labels: {
         // render 'label', 'value', 'percentage', 'image' or custom function, default is 'percentage'
-        render: 'value',
+       render: function (args) {if (args.value > 0) {return 20* args.value + '%'}},
 
         // precision for percentage, default is 0
         precision: 0,
@@ -379,7 +381,7 @@ var IPG = new Chart(ipgchart, {
     plugins: {
        labels: {
         // render 'label', 'value', 'percentage', 'image' or custom function, default is 'percentage'
-        render: 'value',
+        render: function (args) {if (args.value > 0) {return 20* args.value + '%'}},
 
         // precision for percentage, default is 0
         precision: 0,
@@ -406,10 +408,10 @@ var IPG = new Chart(ipgchart, {
         shadowBlur: 10,
 
         // text shadow X offset, default is 3
-        shadowOffsetX: -5,
+        shadowOffsetX: -15,
 
         // text shadow Y offset, default is 3
-        shadowOffsetY: 5,
+        shadowOffsetY: 20,
 
         // text shadow color, default is 'rgba(0,0,0,0.3)'
         shadowColor: 'rgba(255,0,0,0.75)',
