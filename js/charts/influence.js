@@ -52,7 +52,7 @@ var IDAA = new Chart(idaachart, {
     plugins: {
        labels: {
         // render 'label', 'value', 'percentage', 'image' or custom function, default is 'percentage'
-        render: function (args) {return 20* args.value + '%'},
+        render: 'percentage',
 
         // precision for percentage, default is 0
         precision: 0,
