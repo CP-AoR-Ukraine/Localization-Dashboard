@@ -224,7 +224,7 @@ var LNSN = new Chart(lnsnchart, {
       backgroundColor: "#95c651",
       hoverBackgroundColor: "#87a663",
       borderColor: "#95c651",
-      data: [4,0],
+      data: [6,0],
     },{
       label: "International",
       backgroundColor: "#d7e039",
