@@ -167,7 +167,7 @@ var PDAA = new Chart(pdaachart, {
     plugins: {
        labels: {
         // render 'label', 'value', 'percentage', 'image' or custom function, default is 'percentage'
-        render: function (args) {return 20* args.value + '%'},
+        render: 'value',
 
         // precision for percentage, default is 0
         precision: 0,
@@ -268,7 +268,7 @@ var LNASHP = new Chart(lnashpchart, {
     plugins: {
        labels: {
         // render 'label', 'value', 'percentage', 'image' or custom function, default is 'percentage'
-       render: function (args) {if (args.value > 0) {return 20* args.value + '%'}},
+       render: 'value',
 
         // precision for percentage, default is 0
         precision: 0,
@@ -381,7 +381,7 @@ var IPG = new Chart(ipgchart, {
     plugins: {
        labels: {
         // render 'label', 'value', 'percentage', 'image' or custom function, default is 'percentage'
-        render: function (args) {if (args.value > 0) {return 20* args.value + '%'}},
+        render: 'value',
 
         // precision for percentage, default is 0
         precision: 0,
@@ -500,7 +500,7 @@ var PSC = new Chart(pscchart, {
     plugins: {
        labels: {
         // render 'label', 'value', 'percentage', 'image' or custom function, default is 'percentage'
-        render: 'value',
+        render: 'percentage',
 
         // precision for percentage, default is 0
         precision: 0,
