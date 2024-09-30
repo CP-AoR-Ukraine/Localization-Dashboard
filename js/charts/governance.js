@@ -12,7 +12,7 @@ var SAG = new Chart(sagchart, {
   data: {
     labels: ["# from UN agencies", "# from INGOs", "# from National Organisations"],
     datasets: [{
-      data: [2, 4, 2],
+      data: [2, 4, 7],
       backgroundColor: CPbackgroundColor,
       hoverBackgroundColor: CPhoverBackgroundColor,
       hoverBorderColor: "rgba(234, 236, 244, 1)",
