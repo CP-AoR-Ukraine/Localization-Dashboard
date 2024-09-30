@@ -1,6 +1,7 @@
 // Set new default font family and font color to mimic Bootstrap's default styling
 Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
-Chart.defaults.global.defaultFontColor = '#858796';
+Chart.defaults.global.defaultFontColor = '#3a3b45';
+Chart.defaults.global.defaultFontSize = 14;
 var CPbackgroundColor = ['#d7e039', '#95c651', '#86789c','#9fd5b5','#5a5a50']
 var CPhoverBackgroundColor = ['#c3cb4a', '#87a663', '#7d758d', '#90af9f', '#595853']
 
@@ -327,7 +328,7 @@ var QOP = new Chart(qopchart, {
     labels: ["Average 4.3", "Room for Improvement 0.7"],
     datasets: [{
       data: [4.3,0.7],
-      backgroundColor: ['#9fd5b5','#fff'],
+      backgroundColor: ['#9fd5b5','#8e8b82'],
       hoverBackgroundColor: ['#90af9f','#ccc'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",
     }],

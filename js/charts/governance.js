@@ -1,6 +1,7 @@
 // Set new default font family and font color to mimic Bootstrap's default styling
 Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
-Chart.defaults.global.defaultFontColor = '#858796';
+Chart.defaults.global.defaultFontColor = '#3a3b45';
+Chart.defaults.global.defaultFontSize = 14;
 var CPbackgroundColor = ['#d7e039', '#95c651', '#86789c','#9fd5b5','#5a5a50']
 var CPhoverBackgroundColor = ['#c3cb4a', '#87a663', '#7d758d', '#90af9f', '#595853']
 var sagchart = document.getElementById("SAG");
@@ -22,7 +23,7 @@ var SAG = new Chart(sagchart, {
 	  plugins: {
       labels: {
         // render 'label', 'value', 'percentage', 'image' or custom function, default is 'percentage'
-        render: '',
+        render: 'percentage',
 
         // precision for percentage, default is 0
         precision: 0,
@@ -271,8 +272,8 @@ var LNSN = new Chart(lnsnchart, {
                           var meta = chartInstance.controller.getDatasetMeta(i);
                           meta.data.forEach(function(bar, index) {
                                 var data = dataset.data[index];
-								if (data == 4) {
-                                ctx.fillText((data*12.5)+"%", bar._model.x -25, bar._model.y - 5);
+								if (data > 2) {
+                                ctx.fillText((data*10)+"%", bar._model.x -25, bar._model.y - 5);
 								}
 								
 								
