@@ -1,8 +1,9 @@
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-  background: #bfda95;
+  background: #c6bfd1;
   block-size: 10em;
+  overflow: auto;
 }
 
 /* Slides */
@@ -10,6 +11,7 @@
   display: none;
   padding: 1em;
   text-align: center;
+  
 }
 
 /* Next & previous buttons */
@@ -44,7 +46,7 @@
 .dot-container {
   text-align: center;
   padding: 20px;
-  background: #a9d075;
+  background: #aea4bc;
 }
 
 /* The dots/bullets/indicators */
@@ -68,4 +70,20 @@
 .link {
   color: #000 !important;
   text-decoration: none;
+}
+
+.link:hover {
+  color: #000 !important;
+  text-decoration: none;
+}
+.question {
+  display: none;
+}
+
+.link:hover .question {
+   animation: fadeIn 2s;
+   display: inline;
+}
+a {
+    display: block;
 }
