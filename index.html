@@ -111,7 +111,7 @@
 
                     <!-- Content Row -->
 					
-					<div class="slideshow-container">
+					<div id = "GFG" class="slideshow-container">
 
   <!-- Full-width slides/quotes -->
   <div class="mySlides"> <b>Objective: </b>
@@ -140,7 +140,9 @@ issues of localisation and provide the basis to create an action plan towards in
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
 </div>
-					
+					<button onclick="myFunc()">
+        Click here
+    </button>
 					
 <div class="row">
 <div class="col align-self-start">
@@ -252,15 +254,22 @@ and decision-making processes?
 	<script src="js/slides.js"></script>
 	
 	<script>
+	
         let result = document.getElementById("GFG");
+		let currentActiveIndex = 0;
 
         function changeColor(color) {
-            document.body.style.background = color;
+            $("#GFG").css("background-color", color);
+			console.log(color)
         }
-
+		var CPbackgroundColor = ['#d7e039', '#95c651', '#86789c','#9fd5b5','#5a5a50']
         function myFunc() {
-            changeColor('yellow');
-            result.innerHTML = "Background Color changed";
+		if (currentActiveIndex < CPbackgroundColor.length) {
+            changeColor(CPbackgroundColor[currentActiveIndex]);
+			currentActiveIndex = currentActiveIndex + 1;
+			}else {
+    currentActiveIndex = 0;
+  }
         }        
     </script>
 
