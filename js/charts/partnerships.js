@@ -12,7 +12,7 @@ var qopchart = document.getElementById("QOP");
 var FLP = new Chart(flpchart, {
   type: 'pie',
   data: {
-    labels: ["Direct Donor to LNNGO", "Through intermediary", "No LNNGO"],
+    labels: ["Direct Donor to LNNGO (9 projects)", "Through intermediary (71 projects)", "No LNNGO (19 projects)"],
     datasets: [{
       data: [9,71,19],
       backgroundColor: CPbackgroundColor,
