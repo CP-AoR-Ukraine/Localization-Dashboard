@@ -137,12 +137,7 @@ issues of localisation and provide the basis to create an action plan towards in
 <div class="dot-container">
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
-  <button onclick="myFunc()">
-        Click here
-    </button>
-	<span class="phrase">
-            ColorCode
-        </span>
+ 
 </div>
 					
 					
@@ -227,28 +222,7 @@ issues of localisation and provide the basis to create an action plan towards in
     <script src="js/charts/index.js"></script>
 	<script src="js/slides.js"></script>
 	
-	<script>
-	
-        let result = document.getElementById("GFG");
-		let currentActiveIndex = 0;
-		const phrase = document.querySelector('.phrase');
 
-        function changeColor(color) {
-            $("#GFG").css("background-color", color);
-			console.log(color)
-        }
-		var CPbackgroundColor = ['#e5ea8e','#dfe569','#d7e039','#c3cb4a','#afb55b','#888b60','#d2e5b7','#bfda95','#a9d075','#95c651','#87a663','#738462','#c6bfd1','#aea4bc','#988dab','#86789c','#7d758d','#6c6877','#d6ecdf','#c5e4d2','#b1dbc3','#9fd5b5',
-		'#90af9f','#788981','#aea9a5','#8e8b82','#747168','#5a5a50','#595853','#54534f']
-        function myFunc() {
-		if (currentActiveIndex < CPbackgroundColor.length) {
-            changeColor(CPbackgroundColor[currentActiveIndex]);
-			phrase.innerText = CPbackgroundColor[currentActiveIndex];
-			currentActiveIndex = currentActiveIndex + 1;
-			}else {
-    currentActiveIndex = 0;
-  }
-        }        
-    </script>
 
 </body>
 
