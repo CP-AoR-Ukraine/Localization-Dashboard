@@ -2,13 +2,13 @@
 .slideshow-container {
   position: relative;
   background: #bfda95;
-  block-size: 16em;
+  block-size: 10em;
 }
 
 /* Slides */
 .mySlides {
   display: none;
-  padding: 80px;
+  padding: 1em;
   text-align: center;
 }
 
@@ -65,4 +65,7 @@
 }
 
 
+a {
+  color: #000 !important;
+  text-decoration: none;
 }
