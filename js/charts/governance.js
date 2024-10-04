@@ -11,7 +11,7 @@ var lnsnchart = document.getElementById("LNSN");
 var SAG = new Chart(sagchart, {
   type: 'pie',
   data: {
-    labels: ["# from UN agencies (2 partners)", "# from INGOs (4 partners)", "# from National Organisations(7 partners)"],
+    labels: ["# UN agencies (2 partners)", "# INGOs (4 partners)", "# National Organisations(7 partners)"],
     datasets: [{
       data: [2, 4, 7],
       backgroundColor: CPbackgroundColor,
@@ -115,7 +115,7 @@ var SAG = new Chart(sagchart, {
 var WCSAM = new Chart(wcsamchart, {
   type: 'pie',
   data: {
-    labels: [ "# from INGOs (39 partners)", "# from Goverment (7 partners)", "# from  Local and National (160 partners)", "# from UN agencies (3 partners)"],
+    labels: [ "# INGOs (39 partners)", "# Goverment (7 partners)", "# NNGOs (160 partners)", "# UN agencies (3 partners)"],
     datasets: [{
       data: [39, 7, 160,3 ],
       backgroundColor: CPbackgroundColor,
@@ -210,7 +210,8 @@ var WCSAM = new Chart(wcsamchart, {
     legend: {
       display: true,
 	  position: 'bottom',
-	  align: 'start'
+	  align: 'start',
+	  maxWidth: 10,
     },
     cutoutPercentage: 0,
 	
