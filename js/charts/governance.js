@@ -11,7 +11,7 @@ var lnsnchart = document.getElementById("LNSN");
 var SAG = new Chart(sagchart, {
   type: 'pie',
   data: {
-    labels: ["# UN agencies (2 partners)", "# INGOs (4 partners)", "# National Organisations(7 partners)"],
+    labels: ["# UN agencies (2 partners)", "# INGOs (4 partners)", "# NNGOs (7 partners)"],
     datasets: [{
       data: [2, 4, 7],
       backgroundColor: CPbackgroundColor,
