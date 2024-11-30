@@ -105,7 +105,7 @@ var FLP = new Chart(flpchart, {
       caretPadding: 10,
     },
     legend: {
-      display: true,
+      display: false,
 	  position: 'bottom',
 	  align: 'start'
     },
