@@ -418,3 +418,115 @@ var QOP = new Chart(qopchart, {
 	maintainAspectRatio: false
   },
 });
+
+var IPG = new Chart(ipgchart, {
+  type: 'bar',
+  data: {
+    labels: ["NNGO", "INGO"],
+    datasets: [{
+	  label: 'Partnership',
+      backgroundColor: "#d7e039",
+      hoverBackgroundColor: "#c3cb4a",
+      borderColor: "#d7e039",
+	  //borderWidth:2,
+      data: [92, 87],
+    },
+	{
+	  label: 'gap',
+	  backgroundColor: "rgba(192,189,26, 0.01)",
+      hoverBackgroundColor: "rgba(192,189,26, 0.01)",
+      borderColor: "red",
+	  borderWidth:3,
+      data: [8, 13],
+	}
+	],
+  },
+  options: {
+	  scales: {
+        yAxes: [{
+			stacked: true,
+            display: false,
+            ticks: {
+                suggestedMax: 100,    
+                beginAtZero: false  
+            }
+        }],
+		xAxes: [{
+			stacked: true,
+			display: true,
+		}]
+    },
+	
+    plugins: {
+       labels: {
+        // render 'label', 'value', 'percentage', 'image' or custom function, default is 'percentage'
+        render: 'value',
+
+        // precision for percentage, default is 0
+        precision: 0,
+
+        // identifies whether or not labels of value 0 are displayed, default is false
+        showZero: false,
+
+        // font size, default is defaultFontSize
+        fontSize: 12,
+
+        // font color, can be color array for each data or function for dynamic color, default is defaultFontColor
+        fontColor: '#000',
+
+        // font style, default is defaultFontStyle
+        fontStyle: 'normal',
+
+        // font family, default is defaultFontFamily
+        fontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
+
+        // draw text shadows under labels, default is false
+        textShadow: false,
+
+        // text shadow intensity, default is 6
+        shadowBlur: 10,
+
+        // text shadow X offset, default is 3
+        shadowOffsetX: -15,
+
+        // text shadow Y offset, default is 3
+        shadowOffsetY: 20,
+
+        // text shadow color, default is 'rgba(0,0,0,0.3)'
+        shadowColor: 'rgba(255,0,0,0.75)',
+
+
+        // position to draw label, available value is 'default', 'border' and 'outside'
+        // bar chart ignores this
+        // default is 'default'
+        position: 'default',
+
+
+        // show the real calculated percentages from the values and don't apply the additional logic to fit the percentages to 100 in total, default is false
+        showActualPercentages: false,
+
+        // set images when `render` is 'image'
+        images: [
+          {
+            src: 'image.png',
+            width: 16,
+            height: 16
+          }
+        ],
+
+        // add padding when position is `outside`
+        // default is 2
+        outsidePadding: 2,
+
+        // add margin of text when position is `outside` or `border`
+        // default is 2
+        textMargin: 4
+      }
+    },
+	maintainAspectRatio: false,
+	   legend: {
+			display: true,
+			position: 'bottom'
+      }
+  },
+});
