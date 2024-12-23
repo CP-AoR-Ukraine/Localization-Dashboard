@@ -9,6 +9,7 @@ var ahrpschart = document.getElementById("AHRPS");
 var flpchart = document.getElementById("FLP");
 var ppdtachart = document.getElementById("PPDTA");
 var qopchart = document.getElementById("QOP");
+var pwochart = document.getElementById("PWO");
 var FLP = new Chart(flpchart, {
   type: 'pie',
   data: {
@@ -419,12 +420,12 @@ var QOP = new Chart(qopchart, {
   },
 });
 
-var IPG = new Chart(ipgchart, {
+var PWO = new Chart(pwochart, {
   type: 'bar',
   data: {
     labels: ["NNGO", "INGO"],
     datasets: [{
-	  label: 'Partnership',
+	  label: 'Influence and Participation',
       backgroundColor: "#d7e039",
       hoverBackgroundColor: "#c3cb4a",
       borderColor: "#d7e039",
@@ -447,7 +448,7 @@ var IPG = new Chart(ipgchart, {
 			stacked: true,
             display: false,
             ticks: {
-                suggestedMax: 100,    
+                suggestedMax: 110,    
                 beginAtZero: false  
             }
         }],
@@ -460,7 +461,7 @@ var IPG = new Chart(ipgchart, {
     plugins: {
        labels: {
         // render 'label', 'value', 'percentage', 'image' or custom function, default is 'percentage'
-        render: 'value',
+        render: 'percentage',
 
         // precision for percentage, default is 0
         precision: 0,
@@ -469,7 +470,7 @@ var IPG = new Chart(ipgchart, {
         showZero: false,
 
         // font size, default is defaultFontSize
-        fontSize: 12,
+        fontSize: 16,
 
         // font color, can be color array for each data or function for dynamic color, default is defaultFontColor
         fontColor: '#000',
@@ -499,7 +500,7 @@ var IPG = new Chart(ipgchart, {
         // position to draw label, available value is 'default', 'border' and 'outside'
         // bar chart ignores this
         // default is 'default'
-        position: 'default',
+        position: 'border',
 
 
         // show the real calculated percentages from the values and don't apply the additional logic to fit the percentages to 100 in total, default is false
@@ -520,7 +521,7 @@ var IPG = new Chart(ipgchart, {
 
         // add margin of text when position is `outside` or `border`
         // default is 2
-        textMargin: 4
+        textMargin: -20
       }
     },
 	maintainAspectRatio: false,
