@@ -104,7 +104,7 @@ var SAG = new Chart(sagchart, {
       caretPadding: 10,
     },
     legend: {
-      display: true,
+      display: false,
 	  position: 'bottom',
 	  align: 'start'
     },
@@ -208,7 +208,7 @@ var WCSAM = new Chart(wcsamchart, {
       caretPadding: 10,
     },
     legend: {
-      display: true,
+      display: false,
 	  position: 'bottom',
 	  align: 'start',
 	  maxWidth: 10,
@@ -253,7 +253,7 @@ var LNSN = new Chart(lnsnchart, {
 	
     plugins: [],	
 	   legend: {
-			display: true,
+			display: false,
 			position: 'bottom'
       },
 "hover": {

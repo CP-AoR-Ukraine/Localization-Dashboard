@@ -13,7 +13,7 @@ var pscchart = document.getElementById("PSC");
 var IDAA = new Chart(idaachart, {
   type: 'bar',
   data: {
-    labels: ["Influence of local actors", "Influence of international actors"],
+    labels: ["Local actors", "International actors"],
     datasets: [{
       label: "According to: All",
       backgroundColor: "#d7e039",
@@ -118,7 +118,7 @@ var IDAA = new Chart(idaachart, {
     },
 	maintainAspectRatio: false,
 	   legend: {
-			display: true,
+			display: false,
 	  position: 'bottom',
 	  align: 'start'
       }
@@ -233,7 +233,7 @@ var PDAA = new Chart(pdaachart, {
     },
 	maintainAspectRatio: false,
 	   legend: {
-			display: true,
+			display: false,
 	  position: 'bottom',
 	  align: 'start'
       }
@@ -243,13 +243,25 @@ var PDAA = new Chart(pdaachart, {
 var LNASHP = new Chart(lnashpchart, {
   type: 'bar',
   data: {
-    labels: ["According to: All", "According to: Local or National Organisation", "According to: International NGO"],
     datasets: [{
+      label: "According to: All",
       backgroundColor: "#d7e039",
       hoverBackgroundColor: "#c3cb4a",
       borderColor: "#d7e039",
-      data: [3.6, 3.6, 3.4],
-    }
+      data: [3.6],
+    },{
+		label: "According to: Local or National Organisation",
+      backgroundColor: "#95c651 ",
+      hoverBackgroundColor: "#87a663",
+      borderColor: "#95c651",
+      data: [3.6],
+	},{
+		label: "According to: International NGO",
+      backgroundColor: "#86789c ",
+      hoverBackgroundColor: "#7d758d",
+      borderColor: "#86789c",
+      data: [3.4],
+	}
 	],
   },
   options: {
@@ -447,7 +459,7 @@ var IPG = new Chart(ipgchart, {
     },
 	maintainAspectRatio: false,
 	   legend: {
-			display: true,
+			display: false,
 			position: 'bottom'
       }
   },
@@ -489,7 +501,7 @@ var PSC = new Chart(pscchart, {
         yAxes: [{
             display: false,
             ticks: {
-                suggestedMax: 50,    
+                suggestedMax: 60,    
                 beginAtZero: true  
             }
         }],
@@ -566,7 +578,7 @@ var PSC = new Chart(pscchart, {
     },
 	maintainAspectRatio: false,
 	   legend: {
-			display: true,
+			display: false,
 	  position: 'bottom',
 	  align: 'start'
       }

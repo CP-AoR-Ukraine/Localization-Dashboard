@@ -17,7 +17,7 @@ var TCSA = new Chart(tcsachart, {
   data: {
     labels: ["General Programatic", "Organisational or Operational", "Technical Child Protection"],
     datasets: [{
-      data: [47,0,53],
+      data: [38,24,26],
       backgroundColor: CPbackgroundColor,
       hoverBackgroundColor: CPhoverBackgroundColor,
       hoverBorderColor: "rgba(234, 236, 244, 1)",
@@ -108,7 +108,7 @@ var TCSA = new Chart(tcsachart, {
       caretPadding: 10,
     },
     legend: {
-      display: true,
+      display: false,
 	  position: 'bottom',
 	  align: 'start'
     },
@@ -212,7 +212,7 @@ var DAPCD = new Chart(dapcdchart, {
       caretPadding: 10,
     },
     legend: {
-      display: true,
+      display: false,
 	  position: 'bottom',
 	  align: 'start'
     },
@@ -317,7 +317,7 @@ var HSTP = new Chart(hstpchart, {
       caretPadding: 10,
     },
     legend: {
-      display: true,
+      display: false,
 	  position: 'bottom',
 	  align: 'start'
     },
@@ -421,7 +421,7 @@ var AIU = new Chart(aiuchart, {
       caretPadding: 10,
     },
     legend: {
-      display: true,
+      display: false,
 	  position: 'bottom',
 	  align: 'start'
     },
