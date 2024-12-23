@@ -210,7 +210,7 @@ var AHRPS = new Chart(ahrpschart, {
       caretPadding: 10,
     },
     legend: {
-      display: true,
+      display: false,
 	  position: 'bottom',
 	  align: 'start'
     },
@@ -318,7 +318,7 @@ var PPDTA = new Chart(ppdtachart, {
     },
 	maintainAspectRatio: false,
 	   legend: {
-			display: true,
+			display: false,
 			position: 'bottom'
       }
   },
@@ -425,7 +425,7 @@ var PWO = new Chart(pwochart, {
   data: {
     labels: ["NNGO", "INGO"],
     datasets: [{
-	  label: 'Influence and Participation',
+	  label: 'With partnership',
       backgroundColor: "#d7e039",
       hoverBackgroundColor: "#c3cb4a",
       borderColor: "#d7e039",
@@ -433,7 +433,7 @@ var PWO = new Chart(pwochart, {
       data: [92, 87],
     },
 	{
-	  label: 'gap',
+	  label: 'Without partnership',
 	  backgroundColor: "rgba(192,189,26, 0.01)",
       hoverBackgroundColor: "rgba(192,189,26, 0.01)",
       borderColor: "red",
@@ -526,7 +526,7 @@ var PWO = new Chart(pwochart, {
     },
 	maintainAspectRatio: false,
 	   legend: {
-			display: true,
+			display: false,
 			position: 'bottom'
       }
   },
