@@ -13,25 +13,25 @@ var pscchart = document.getElementById("PSC");
 var IDAA = new Chart(idaachart, {
   type: 'bar',
   data: {
-    labels: ["Local actors", "International actors"],
+    labels: ["Local actors", "International actors", "Goverment", "UN agency"],
     datasets: [{
       label: "According to: All",
       backgroundColor: "#d7e039",
       hoverBackgroundColor: "#c3cb4a",
       borderColor: "#d7e039",
-      data: [3.6,4],
+      data: [3.6,4,3.7,4],
     },{
 		label: "According to: Local or National Organisation",
       backgroundColor: "#95c651 ",
       hoverBackgroundColor: "#87a663",
       borderColor: "#95c651",
-      data: [3.7,4],
+      data: [3.7,4,3.7,4],
 	},{
 		label: "According to: International NGO",
       backgroundColor: "#86789c ",
       hoverBackgroundColor: "#7d758d",
       borderColor: "#86789c",
-      data: [3.5,4],
+      data: [3.5,4,3.6,4],
 	}
 	],
   },
@@ -129,25 +129,25 @@ var IDAA = new Chart(idaachart, {
 var PDAA = new Chart(pdaachart, {
   type: 'bar',
   data: {
-    labels: ["Local actors", "International actors"],
+    labels: ["Local actors", "International actors", "Goverment", "UN agency"],
     datasets: [{
       label: "According to: All",
       backgroundColor: "#d7e039",
       hoverBackgroundColor: "#c3cb4a",
       borderColor: "#d7e039",
-      data: [3.4,4],
+      data: [3.6,4,3.5,4.2],
     },{
 		label: "According to: Local or National Organisation",
       backgroundColor: "#95c651 ",
       hoverBackgroundColor: "#87a663",
       borderColor: "#95c651",
-      data: [3.6,4],
+      data: [3.6,4,3.5,4.2],
 	},{
 		label: "According to: International NGO",
       backgroundColor: "#86789c ",
       hoverBackgroundColor: "#7d758d",
       borderColor: "#86789c",
-      data: [3.1,4],
+      data: [3.4,4,2.9,3.9],
 	}
 	],
   },
