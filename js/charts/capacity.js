@@ -27,7 +27,9 @@ var TCSA = new Chart(tcsachart, {
 	  plugins: {
       labels: {
         // render 'label', 'value', 'percentage', 'image' or custom function, default is 'percentage'
-        render: 'value',
+         render: function (args) {
+      return  args.value + '%';
+    },
 
         // precision for percentage, default is 0
         precision: 0,
